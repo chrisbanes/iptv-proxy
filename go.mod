@@ -1,4 +1,4 @@
-module github.com/pierre-emmanuelJ/iptv-proxy
+module github.com/chrisbanes/iptv-proxy
 
 require (
 	github.com/gin-contrib/cors v0.0.0-20190226021855-50921afdc5c1
@@ -9,7 +9,7 @@ require (
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.8.1
-	github.com/tellytv/go.xtream-codes v0.0.0-20220204001149-59925bc76764
+	github.com/chrisbanes/go.xtream-codes v0.0.1
 )
 
 require (
