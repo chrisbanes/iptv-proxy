@@ -52,8 +52,6 @@ github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA
 github.com/chenzhuoyu/base64x v0.0.0-20211019084208-fb5309c8db06/go.mod h1:DH46F32mSOjUmXrMHnKwZdA8wcEefY7UVqBKYGjpdQY=
 github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 h1:qSGYFH7+jGhDF8vLC+iwCD4WpbV1EBDSzWkJODFLams=
 github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311/go.mod h1:b583jCggY9gE99b6G5LEC39OIiVsWj+R97kbl5odCEk=
-github.com/chrisbanes/go.xtream-codes v0.0.0-20240416171424-281acdead224 h1:Zco1qs5Zpc+8IKEPIG0BV+AHSGqjyciye+mQ1sIhREk=
-github.com/chrisbanes/go.xtream-codes v0.0.0-20240416171424-281acdead224/go.mod h1:CAPl2pjjn+teqwvWcrtg1H4x/F85vKuv2CVZd9pP7G0=
 github.com/chrisbanes/go.xtream-codes v0.0.1 h1:FQZvMe/VNfxeDUQYNBbHS2P8r0bVdT0NkjnOLhvkeAE=
 github.com/chrisbanes/go.xtream-codes v0.0.1/go.mod h1:CAPl2pjjn+teqwvWcrtg1H4x/F85vKuv2CVZd9pP7G0=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
@@ -311,8 +309,6 @@ github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKs
 github.com/stretchr/testify v1.8.1/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
 github.com/subosito/gotenv v1.2.0 h1:Slr1R9HxAlEKefgq5jn9U+DnETlIUa6HfgEzj0g5d7s=
 github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
-github.com/tellytv/go.xtream-codes v0.0.0-20220204001149-59925bc76764 h1:0ndlBWeI4p3jyzr5KWrtOVQsCimAUBo86/svYFDTgVo=
-github.com/tellytv/go.xtream-codes v0.0.0-20220204001149-59925bc76764/go.mod h1:8fbwWl4BCtFxxEhTTAqzjN11aC5TKWdc3yHlH/iXORo=
 github.com/twitchyliquid64/golang-asm v0.15.1 h1:SU5vSMR7hnwNxj24w34ZyCi/FmDZTkS4MhqMhdFk5YI=
 github.com/twitchyliquid64/golang-asm v0.15.1/go.mod h1:a1lVb/DtPvCB8fslRZhAngC2+aY1QWCk3Cedj/Gdt08=
 github.com/ugorji/go/codec v0.0.0-20181209151446-772ced7fd4c2/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=

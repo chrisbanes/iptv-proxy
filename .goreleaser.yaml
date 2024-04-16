@@ -24,15 +24,15 @@ archives:
 
 release:
   github:
-    owner: pierre-emmanuelJ
+    owner: chrisbanes
     name: iptv-proxy
   draft: false
 
 nfpms:
   -
-   vendor: Pierre-Emmanuel Jacquier
-   homepage: https://github.com/pierre-emmanuelJ/iptv-proxy
-   maintainer: Pierre-Emmanuel <pierre-emmanuel.jacquier@epitech.eu>
+   vendor: Chris Banes
+   homepage: https://github.com/chrisbanes/iptv-proxy
+   maintainer: Chris Banes <chris@banes.me>
    description: Reverse proxy on iptv m3u file
    license: Apache 2.0
    formats:
@@ -41,14 +41,10 @@ nfpms:
 
 dockers:
   - image_templates:
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:{{ .Tag }}-arm64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:v{{ .Major }}-arm64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-arm64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:latest-arm64"
-    - "pierro777/iptv-proxy:{{ .Tag }}-arm64"
-    - "pierro777/iptv-proxy:v{{ .Major }}-arm64"
-    - "pierro777/iptv-proxy:v{{ .Major }}.{{ .Minor }}-arm64"
-    - "pierro777/iptv-proxy:latest-arm64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-arm64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-arm64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-arm64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:latest-arm64"
     use: buildx
     goos: linux
     goarch: arm64
@@ -64,22 +60,14 @@ dockers:
     dockerfile: .Dockerfile.goreleaser
 
   - image_templates:
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:{{ .Tag }}-amd64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:v{{ .Major }}-amd64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-amd64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:latest-amd64"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:{{ .Tag }}"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:v{{ .Major }}"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}"
-    - "docker.pkg.github.com/pierre-emmanuelj/iptv-proxy/iptv-proxy:latest"
-    - "pierro777/iptv-proxy:{{ .Tag }}-amd64"
-    - "pierro777/iptv-proxy:v{{ .Major }}-amd64"
-    - "pierro777/iptv-proxy:v{{ .Major }}.{{ .Minor }}-amd64"
-    - "pierro777/iptv-proxy:latest-amd64"
-    - "pierro777/iptv-proxy:{{ .Tag }}"
-    - "pierro777/iptv-proxy:v{{ .Major }}"
-    - "pierro777/iptv-proxy:v{{ .Major }}.{{ .Minor }}"
-    - "pierro777/iptv-proxy:latest"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-amd64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-amd64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-amd64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:latest-amd64"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}"
+    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:latest"
     use: buildx
     goos: linux
     goarch: amd64

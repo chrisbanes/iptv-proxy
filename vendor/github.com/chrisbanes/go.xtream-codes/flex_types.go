@@ -27,7 +27,12 @@ func (t Timestamp) MarshalJSON() ([]byte, error) {
 func (t *Timestamp) UnmarshalJSON(b []byte) error {
 	// Timestamps are sometimes quoted, sometimes not, lets just always remove quotes just in case...
 	t.quoted = strings.Contains(string(b), `"`)
-	ts, err := strconv.Atoi(strings.Replace(string(b), `"`, "", -1))
+	withoutQuotes := strings.Replace(string(b), `"`, "", -1)
+	if len(withoutQuotes) == 0 {
+		return nil
+	}
+
+	ts, err := strconv.Atoi(withoutQuotes)
 	if err != nil {
 		return err
 	}

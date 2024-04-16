@@ -22,6 +22,9 @@ github.com/bytedance/sonic/utf8
 # github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311
 ## explicit; go 1.15
 github.com/chenzhuoyu/base64x
+# github.com/chrisbanes/go.xtream-codes v0.0.1
+## explicit; go 1.17
+github.com/chrisbanes/go.xtream-codes
 # github.com/fsnotify/fsnotify v1.4.9
 ## explicit; go 1.13
 github.com/fsnotify/fsnotify
@@ -139,9 +142,6 @@ github.com/spf13/viper
 # github.com/subosito/gotenv v1.2.0
 ## explicit
 github.com/subosito/gotenv
-# github.com/tellytv/go.xtream-codes v0.0.0-20220204001149-59925bc76764
-## explicit; go 1.17
-github.com/tellytv/go.xtream-codes
 # github.com/twitchyliquid64/golang-asm v0.15.1
 ## explicit; go 1.13
 github.com/twitchyliquid64/golang-asm/asm/arch
