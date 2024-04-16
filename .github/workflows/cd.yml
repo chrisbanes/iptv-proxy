@@ -2,12 +2,8 @@ name: CD
 
 on:
   push:
-    branches:
-      - main
-      - master
     tags:
       - v*
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -31,6 +27,6 @@ jobs:
         uses: goreleaser/goreleaser-action@v5
         with:
           version: latest
-          args: release --rm-dist --skip-sign
+          args: release --clean --skip=sign
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
