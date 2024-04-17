@@ -9,7 +9,6 @@ builds:
       - -a
     goos:
       - windows
-      - darwin
       - linux
 
     goarch:
