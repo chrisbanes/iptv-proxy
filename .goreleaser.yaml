@@ -41,10 +41,14 @@ nfpms:
 
 dockers:
   - image_templates:
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-arm64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-arm64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-arm64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:latest-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:latest-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-arm64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:latest-arm64"
     use: buildx
     goos: linux
     goarch: arm64
@@ -60,14 +64,22 @@ dockers:
     dockerfile: .Dockerfile.goreleaser
 
   - image_templates:
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-amd64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-amd64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-amd64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:latest-amd64"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}"
-    - "docker.pkg.github.com/chrisbanes/iptv-proxy/iptv-proxy:latest"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:latest-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:latest"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:latest-amd64"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:{{ .Tag }}"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:v{{ .Major }}.{{ .Minor }}"
+    - "ghcr.io/chrisbanes/iptv-proxy/iptv-proxy:latest"
     use: buildx
     goos: linux
     goarch: amd64
